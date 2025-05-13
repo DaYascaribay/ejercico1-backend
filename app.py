@@ -134,6 +134,7 @@ def delete_user():
     return jsonify({'message': 'User deleted succesfully',
                     'user': id_user})
 
+'''
 # Rutas para costo
 @app.route("/costs/load_user_costs/<id_user>", methods=["GET"])
 def load_users_costs(id_user):
@@ -231,7 +232,6 @@ def insert_income():
     return jsonify({
         'message': 'Income inserted succesfully'
     })
-
-
+'''
 if __name__=="__main__":
     app.run(host="0.0.0.0", debug=True, port=666)
